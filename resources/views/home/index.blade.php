@@ -7,5 +7,5 @@
 @endsection
 
 @section('content')
-    <h2>Selamat Datang</h2>
+    <h1>Selamat datang I Komang Yoga Surya Aditya</h1>
 @endsection

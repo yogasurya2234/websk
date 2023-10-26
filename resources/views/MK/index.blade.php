@@ -22,8 +22,8 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">ID matakuliah</th>
-                        <th scope="col">nama matakuliah</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">nama</th>
                         <th scope="col">Jurusan</th>
                         <th scope="col"></th>
                     </tr>
@@ -31,7 +31,7 @@
                 <tbody>
                     @foreach ($data as $d)
                         <tr>
-                            <td>{{ $d['ID matakuliah\'] }}</td>
+                            <td>{{ $d['ID'] }}</td>
                             <td>{{ $d['nama'] }}</td>
                             <td>{{ $d['jurusan'] }}</td>
                             <td class="float-end">

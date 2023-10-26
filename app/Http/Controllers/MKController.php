@@ -8,24 +8,24 @@ class MKController extends Controller
 {
     private $data = [
         [
-            'ID' => "123456",
-            'nama' => "elektro",
-            'jurusan' => "sistem komputer",
+            'ID' => "2201020078",
+            'nama' => " Microprocessor",
+            'jurusan' => "Sistem Komputer",
         ],
         [
             'ID' => "2201020089",
-            'nama' => "dip",
-            'jurusan' => "sistem komputer",
+            'nama' => "Network and Infrastructure",
+            'jurusan' => "Sistem Komputer",
         ],
         [
-            'ID' => "345678",
-            'nama' => "network infastruktur",
-            'jurusan' => "sistem komputer",
+            'ID' => "2301020045",
+            'nama' => "Cloud Technology ",
+            'jurusan' => "Sistem Komputer",
         ],
         [
-            'ID' => "456789",
+            'ID' => "2122010045",
             'nama' => "web progreming",
-            'jurusan' => "sistem komputer",
+            'jurusan' => "Sistem Komputer",
         ],
     ];
     public function index()

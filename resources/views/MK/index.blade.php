@@ -14,7 +14,7 @@
                     <h4 class="card-title">Tabel Data MK</h4>
                 </div>
                 <div class="col-2">
-                    <a class="btn btn-sm btn-primary float-end" href="{{ url('/mahasiswa/create') }}">Tambah</a>
+                    <a class="btn btn-sm btn-primary float-end" href="{{ url('/mk/create') }}">Tambah</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                             <td>{{ $d['jurusan'] }}</td>
                             <td class="float-end">
                                 <a class="btn btn-sm btn-warning"
-                                    href="{{ url('/mahasiswa/' . $loop->index . '/edit') }}">Ubah</a>
+                                    href="{{ url('/mk/' . $loop->index . '/edit') }}">Ubah</a>
                                 <button class="btn btn-sm btn-danger">Hapus</button>
                             </td>
                         </tr>

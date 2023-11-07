@@ -1,6 +1,6 @@
 @extends('layout.master')
 
-@section('title', 'Ubah Mata kuliah')
+@section('title', 'Ubah MK')
 
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="{{ url('/mk') }}">Mata kuliah</a></li>
@@ -20,18 +20,18 @@
             <div class="card-body">
                 <div>
                     <label class="form-label">ID</label>
-                    <input class="form-control" type="text" name="ID" value="{{ $data['ID'] }}">
+                    <input class="form-control" type="text" name="ID" value="{{ $mk->idmk  }}">
                 </div>
                 <div>
-                    <label class="form-label">Nama</label>
-                    <input class="form-control" type="text" name="nama" value="{{ $data['nama'] }}">
+                    <label class="form-label">Nama Mata kuliah</label>
+                    <input class="form-control" type="text" name="nama" value="{{ $mk->namamk }}">
                 </div>
                 <div>
                     <label class="form-label">Jurusan</label>
                     <select class="form-select" name="jurusan">
-                        <option {{ $data['jurusan'] == 'TI' ? 'selected' : '' }} value="TI">TI</option>
-                        <option {{ $data['jurusan'] == 'SK' ? 'selected' : '' }} value="SK">SK</option>
-                        <option {{ $data['jurusan'] == 'DGM' ? 'selected' : '' }} value="DGM">DGM</option>
+                    @foreach ($jurusan as $j)
+                        <option {{ $mk->jurusan_id == $j->id ? 'selected' : '' }} value="{{ $j->id }}">{{ $j->nama }} </option>
+                    @endforeach
                     </select>
                 </div>
 

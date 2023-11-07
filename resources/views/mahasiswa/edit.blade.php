@@ -30,7 +30,7 @@
                     <label class="form-label">Jurusan</label>
                     <select class="form-select" name="jurusan">
                     @foreach ($jurusan as $j)
-                        <option {{ $data->jurusan_id == $j->id ? 'selected' : '' }} value="{{$j->id}}">{{$j->nama}} </option>
+                        <option {{ $data->jurusan_id == $j->id ? 'selected' : '' }} value="{{ $j->id }}">{{ $j->nama }} </option>
                     @endforeach
                     </select>
                 </div>

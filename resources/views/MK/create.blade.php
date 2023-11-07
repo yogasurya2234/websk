@@ -1,9 +1,9 @@
 @extends('layout.master')
 
-@section('title', 'Tambah Mahasiswa')
+@section('title', 'Tambah Mata Kuliah')
 
 @section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{ url('/mahasiswa') }}">Mahasiswa</a></li>
+    <li class="breadcrumb-item"><a href="{{ url('/mk') }}">Mata Kuliah</a></li>
     <li class="breadcrumb-item active">Tambah</li>
 @endsection
 
@@ -11,26 +11,27 @@
     <div class="card">
         <div class="card-header">
             <div class="row">
-                <h4 class="card-title">Form Tambah Mahasiswa</h4>
+                <h4 class="card-title">Form Tambah Mata Kuliah</h4>
             </div>
         </div>
-        <form action="{{ url('/mahasiswa') }}" method="POST">
+        <form action="{{ url('/mk') }}" method="POST">
             <div class="card-body">
                 @csrf
                 <div>
-                    <label class="form-label">ID mahasiswa</label>
+                    <label class="form-label">ID Mata Kuliah</label>
                     <input class="form-control" type="text" name="nim">
                 </div>
                 <div>
-                    <label class="form-label">Nama matakuliah</label>
+                    <label class="form-label">Nama Mata kuliah</label>
                     <input class="form-control" type="text" name="nama">
                 </div>
                 <div>
                     <label class="form-label">Jurusan</label>
                     <select class="form-select" name="jurusan">
-                        <option value="1">TI</option>
-                        <option value="2">SK</option>
-                        <option value="3">DGM</option>
+                        <option value="1">Sistem Komputer</option>
+                        <option value="2">Teknologi Informasi</option>
+                        <option value="3">Business Digital</option>
+                        <option value="4">Design Komunikasi visual</option>
                     </select>
                 </div>
 

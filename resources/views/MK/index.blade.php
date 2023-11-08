@@ -36,7 +36,7 @@
                             <td>{{ $d->jurusan_nama }}</td>
                             <td class="float-end">
                                 <a class="btn btn-sm btn-warning"
-                                    href="{{ url('/mk/' . $loop->index . '/edit') }}">Ubah</a>
+                                    href="{{ url('/mk/' . $d->idmk . '/edit') }}">Ubah</a>
                                 <button class="btn btn-sm btn-danger">Hapus</button>
                             </td>
                         </tr>
